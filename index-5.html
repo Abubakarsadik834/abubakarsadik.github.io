@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abubakar Sadik Sako - Future Scientist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      color: #0d47a1;
+      text-align: center;
+      padding: 50px;
+    }
+    h1, h2, p {
+      margin: 10px 0;
+    }
+    #typing {
+      font-size: 1.3em;
+      white-space: pre-line;
+      display: inline-block;
+      border-right: 2px solid #1a237e;
+      animation: blink 0.7s steps(1) infinite, glow 2s ease-in-out infinite alternate;
+      color: #1565c0;
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #42a5f5, 0 0 10px #42a5f5;
+      }
+      to {
+        text-shadow: 0 0 20px #1e88e5, 0 0 30px #1e88e5;
+      }
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 1.1em;
+      color: #0d47a1;
+      border-top: 2px solid #1a237e;
+      padding-top: 20px;
+    }
+    a {
+      color: #1a237e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .quotes {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #e8eaf6;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    blockquote {
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div id="typing"></div>
+
+  <h1>Abubakar Sadik Sako</h1>
+  <h2>Future Scientist on a Journey of Discovery</h2>
+  <p>I am exploring science, technology, and creativity to make the world a better place.</p>
+
+  <footer>
+    📧 Contact me:
+    <a href="mailto:fatizimbu1985@gmail.com">fatizimbu1985@gmail.com</a>
+
+    <div class="quotes">
+      <h3>🌟 Science Inspiration</h3>
+      <blockquote>“The important thing is not to stop questioning. Curiosity has its own reason for existing.” — Albert Einstein</blockquote>
+      <blockquote>“What we know is a drop, what we don’t know is an ocean.” — Isaac Newton</blockquote>
+      <blockquote>“Nothing in life is to be feared; it is only to be understood.” — Marie Curie</blockquote>
+      <blockquote>“The present is theirs; the future, for which I really worked, is mine.” — Nikola Tesla</blockquote>
+      <blockquote>“We will always have STEM with us. Some things will drop out of the public eye and go away, but there will always be science, engineering, and technology.” — Katherine Johnson</blockquote>
+    </div>
+  </footer>
+
+  <script>
+    const text = "The next great scientist is rising — Abubakar Sadik Sako from Ghana.\n\nOne day, I dream to work with the Ghana Science Institute.";
+    let i = 0;
+    const speed = 80;
+    const typingDiv = document.getElementById("typing");
+
+    function type() {
+      if (i < text.length) {
+        typingDiv.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
